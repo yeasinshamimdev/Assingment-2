@@ -1,0 +1,74 @@
+/* ---------------
+Google Fonts  
+-----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* --------------
+common style  
+----------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* --------------
+Nav Bar style  
+----------------*/
+.nav-bar{
+    display: flex;
+    margin: 30px 100px;
+    justify-content: space-between;
+}
+.nav-title{
+    font-size: 24px;
+    cursor: pointer;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+}
+.menu-bar ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.menu-bar ul a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: bold;
+    color: blueviolet;
+}
+.menu-bar ul a:hover{
+    color: rgb(0, 17, 255);
+    background-color: rgba(17, 0, 255, 0.096);
+    border-radius: 10px;
+}
+.fas.fa-search, .fas.fa-shopping-cart{
+    margin-left: 20px;
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+}
+/* -------------------
+Header content style  
+---------------------*/
+.header-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 40px 100px;
+    justify-content: space-between;
+}
+.header-info{
+    margin-right: 60px;
+}
+.header-title{
+    font-size: 52px;
+    font-weight: 700;
+}
+.header-image {
+    border: 1px solid rgba(128, 128, 128, 0.267);
+    margin-left: 60px;
+    border-radius: 50%;
+}
+.header-image img{
+    width: 90%;
+}
