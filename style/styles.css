@@ -183,8 +183,25 @@ Product Style
     font-weight: bold;
     font-size: 16px;
 } 
-
-
+/* ------------------
+contract us style  
+--------------------*/
+.contract-us h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+.dev-info{
+    display: flex;
+}
+.contract-img{
+    width: 700px;
+    margin-right: 50px;
+}
+.contract-img img{
+    width: 100%;
+}
 /*-----------------
  Footer style  
  -----------------*/
