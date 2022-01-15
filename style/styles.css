@@ -7,6 +7,7 @@ common style
 ----------------*/
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
 }
 .container{
     width: 1047px;
@@ -108,7 +109,7 @@ e-commace website style
 ------------------- */
 .e-commace-site{
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(6,1fr);
     margin: auto;
     align-items: center;
 }
@@ -279,12 +280,57 @@ Mobile Devices
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 10px;
     }
+    .e-commace-website{
+        margin: auto;
+    }
     .collection-title{
         text-align: left;
     }
     .product-card{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    }
+    .dev-info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+}
+/* --------------------
+Table Devices  
+----------------------*/
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .header-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+    }
+    .header-info{
+        margin: auto;
+    }
+    .header-image img{
+        width: 100%;
+    }
+    .e-commace-site{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 10px;
+    }
+    .e-commace-website{
+        margin: auto;
+    }
+    .collection-title{
+        text-align: left;
+    }
+    .product-card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
     .dev-info{
         display: grid;
