@@ -87,7 +87,7 @@ button a{
 }
 .header-image {
     margin-left: 60px;
-    animation: pop-in 2s ease-out forwards;
+    animation: pop-in 4s ease-out forwards infinite;
 }
 @keyframes pop-in {
     0% {
@@ -112,8 +112,8 @@ e-commace website style
     margin: auto;
     align-items: center;
 }
-hr{
-    width: 1110px;
+.e-commace-website{
+    cursor: pointer;
 }
 /* -----------------
 Product Style  
@@ -184,10 +184,10 @@ Product Style
     font-weight: bold;
     font-size: 14px;
     line-height: 5px;
-}
+} 
 .see-more-button{
     text-align: right;
-} 
+}
 .see-more-button a{
     color: #E02C6D;
     text-decoration: none;
@@ -207,11 +207,14 @@ contract us style
     display: flex;
 }
 .contract-img{
-    width: 700px;
+    width: 50%;
     margin-right: 50px;
 }
 .contract-img img{
-    width: 100%;
+    width: 80%;
+}
+.contract-info{
+    width: 50%;
 }
 /*-----------------
  Footer style  
@@ -245,4 +248,47 @@ footer p{
     background-color: rgba(255, 255, 255, 0.144);
     border-radius: 50%;
     cursor: pointer;
+}
+
+/* -------------------
+Responsive Media Quires  
+---------------------*/
+/* -------------------
+Mobile Devices  
+---------------------*/
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .header-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-evenly;
+    }
+    .header-info{
+        margin: auto;
+    }
+    .header-image img{
+        width: 100%;
+    }
+    .e-commace-site{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+    }
+    .collection-title{
+        text-align: left;
+    }
+    .product-card{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .dev-info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
 }
