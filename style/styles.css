@@ -183,3 +183,38 @@ Product Style
     font-weight: bold;
     font-size: 16px;
 } 
+
+
+/*-----------------
+ Footer style  
+ -----------------*/
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+}
+footer h1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+footer p{
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 10px;
+    margin-bottom: 30px;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+.social-icon{
+    height: 25px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 50%;
+    cursor: pointer;
+}
